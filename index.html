@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fpt academic portal</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="row">
+                <h1>FPT University Academic Portal</h1>
+            <div class="header-left">
+                <h3>Fap mobile app (myFap) is ready at</h3>
+                <div class="app row">
+                    <img  src="./img/app-store.svg" alt="">
+                    <img  src="./img/play-store.svg" alt="">
+                </div>
+            </div>
+            </div>
+            <div class="row nav">
+                <div class="text_blue">Home <span class="text_black">| View Schedule</span></div>
+                <div class="user">
+                    <span>longntse161734</span>
+                    <span>logout</span>
+                    <span>Campus:FPTU Hồ Chí Minh</span>
+                </div>
+            </div>
+            
+        </div>
+        <div class="container">
+            <h1>
+                Activities for longntse161734 (Nguyễn Thành Long)
+            </h1>
+            <b>Note:</b><p class="inline">These activities do not include extra-curriculum activities, such as club activities ...</p><br>
+            <b>Chú thích:</b><p class="inline">Các hoạt động trong bảng dưới không bao gồm hoạt động ngoại khóa, ví dụ như hoạt động câu lạc bộ ...</p>
+            <br>
+            <table>
+                <thead>
+                    <tr><td>YEAR
+                            <select name="year" id="year">
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                            </select>
+                        </td>
+                        <td>MON</td>
+                        <td>TUE</td>
+                        <td>WEB</td>
+                        <td>THU</td>
+                        <td>FRI</td>
+                        <td>SAT</td>
+                        <td>SUN</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            WEEK
+                            <select name="week" id="week" onchange="update()" >
+                                <option value="12">12/12 to 18/12</option>
+                                <option value="19">19/12 to 25/12</option>
+                            </select>
+                        </td>
+                        <td class="day">12/12</td>
+                        <td class="day">13/12</td>
+                        <td class="day">14/12</td>
+                        <td class="day">15/12</td>
+                        <td class="day">16/12</td>
+                        <td class="day">17/12</td>
+                        <td class="day">18/12</td>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>slot 1</td>
+                        <td>-</td>
+                        <td><div class="subj">
+                                <h2>CEA201</h2>
+                                <p class="room">at 133</p>
+                                <p class="status">not attend</p>
+                                <span>(7:00-8:30)</span>
+                            </div>
+                        </td>
+                        <td>-</td>
+                        <td><div class="subj">
+                            <h2>CEA201</h2>
+                            <p class="room">at 133</p>
+                            <p class="status">not attend</p>
+                            <span>(7:00-8:30)</span>
+                        </div></td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>slot 2</td>
+                        <td><div class="subj">
+                                <h2>PRF192</h2>
+                                <p class="room">at 305</p>
+                                <p class="status">not attend</p>
+                                <span>(8:45-10:15)</span>
+                            </div>
+                        </td>
+                        <td><div class="subj">
+                                <h2>CEA201</h2>
+                                <p class="room">at 133</p>
+                                <p class="status">not attend</p>
+                                <span>(8:45-10:15)</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="subj">
+                                <h2>PRF192</h2>
+                                <p class="room">at 305</p>
+                                <p class="status">not attend</p>
+                                <span>(8:45-10:15)</span>
+                            </div>
+                        </td>
+                        <td><div class="subj">
+                                <h2>CEA201</h2>
+                                <p class="room">at 133</p>
+                                <p class="status">not attend</p>
+                                <span>(8:45-10:15)</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="subj">
+                                <h2>CSI104</h2>
+                                <p class="room">at 134</p>
+                                <p class="status">not attend</p>
+                                <span>(8:45-10:15)</span>
+                            </div>
+                        </td>
+                        <td>    
+                            <div class="subj">
+                                <h2>PRF192</h2>
+                                <p class="room">at 305</p>
+                                <p class="status">not attend</p>
+                                <span>(8:45-10:15)</span>
+                            </div>
+                        </td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>slot 3</td>
+                        <td><div class="subj">
+                                <h2>MAE101</h2>
+                                <p class="room">at 404</p>
+                                <p class="status">not attend</p>
+                                <span>(10:30-12:00)</span>
+                            </div>
+                        </td>
+                        <td><div class="subj">
+                            <h2>CSI104</h2>
+                            <p class="room">at 134</p>
+                            <p class="status">not attend</p>
+                            <span>(10:30-12:00)</span>
+                        </div>
+                        </td>
+                        <td>
+                            <div class="subj">
+                                <h2>MAE101</h2>
+                                <p class="room">at 404</p>
+                                <p class="status">not attend</p>
+                                <span>(10:30-12:00)</span>
+                            </div>
+                        </td>
+                        <td><div class="subj">
+                            <h2>CSI104</h2>
+                            <p class="room">at 134</p>
+                            <p class="status">not attend</p>
+                            <span>(10:30-12:00)</span>
+                        </div>
+                        </td>
+                        <td>
+                            <div class="subj">
+                                <h2>MAE101</h2>
+                                <p class="room">at 404</p>
+                                <p class="status">not attend</p>
+                                <span>(10:30-12:00)</span>
+                            </div>
+                        </td>
+                        <td>    
+                            -
+                        </td>
+                        <td>-</td>
+                    </tr> 
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./code.js"></script>
+</body>
+</html>
